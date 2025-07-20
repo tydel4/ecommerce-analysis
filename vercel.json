@@ -1,17 +1,15 @@
 {
+  "version": 2,
   "builds": [
     {
-      "src": "simple_app.py",
-      "use": "@vercel/python"
+      "src": "index.html",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "simple_app.py"
+      "dest": "/index.html"
     }
-  ],
-  "env": {
-    "PYTHONPATH": "."
-  }
+  ]
 } 
