@@ -31,6 +31,25 @@ st.markdown("""
         padding: 1rem;
         border-radius: 0.5rem;
         border-left: 4px solid #1f77b4;
+        color: #333333;
+    }
+    .metric-card h3 {
+        color: #666666;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    .metric-card h2 {
+        color: #1f77b4;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .metric-card p {
+        color: #28a745;
+        font-size: 0.9rem;
+        margin: 0;
     }
 </style>
 """, unsafe_allow_html=True)
