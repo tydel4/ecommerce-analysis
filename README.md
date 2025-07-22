@@ -63,7 +63,7 @@ ecommerce-analysis/
    ```bash
    python run_app.py
    # or
-   streamlit run web_app.py
+   streamlit run streamlit_app.py
    ```
 5. **Run Jupyter notebooks**:
    ```bash

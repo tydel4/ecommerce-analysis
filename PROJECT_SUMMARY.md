@@ -99,10 +99,13 @@ pip install -r requirements.txt
 
 # 2. Run locally
 python run_app.py
+# or
+streamlit run streamlit_app.py
 
 # 3. Deploy to Streamlit Cloud
 # - Push to GitHub
 # - Connect to Streamlit Cloud
+# - Set main file to: streamlit_app.py
 # - Get your live URL
 ```
 

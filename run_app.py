@@ -34,9 +34,9 @@ def run_app():
     print("🚀 Starting E-Commerce Analytics Dashboard...")
     print("="*50)
     
-    # Check if web_app.py exists
-    if not os.path.exists('web_app.py'):
-        print("❌ Error: web_app.py not found!")
+    # Check if streamlit_app.py exists
+    if not os.path.exists('streamlit_app.py'):
+        print("❌ Error: streamlit_app.py not found!")
         print("Make sure you're in the correct directory.")
         return
     
@@ -64,7 +64,7 @@ def run_app():
     # Run Streamlit
     try:
         subprocess.run([
-            sys.executable, "-m", "streamlit", "run", "web_app.py",
+            sys.executable, "-m", "streamlit", "run", "streamlit_app.py",
             "--server.headless", "true",
             "--server.port", "8501"
         ])
@@ -72,7 +72,7 @@ def run_app():
         print("\n🛑 Dashboard stopped by user")
     except Exception as e:
         print(f"\n❌ Error running dashboard: {e}")
-        print("Try running: streamlit run web_app.py")
+        print("Try running: streamlit run streamlit_app.py")
 
 if __name__ == "__main__":
     run_app() 
